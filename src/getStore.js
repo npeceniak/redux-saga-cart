@@ -11,7 +11,7 @@ import { getQuery } from './utility'
 import { reducer } from './combineReducers';
 import { defaultState } from './defaultState'
 import createSagaMiddleWare from 'redux-saga';
-import { initsagas, initSagas } from './initSagas';
+import { initSagas } from './initSagas';
 
 const stateTransformer = (state) => {
     if (Iterable.isIterable(state)) return state.toJS();
